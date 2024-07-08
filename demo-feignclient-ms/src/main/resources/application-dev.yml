@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: demo-feignclient-ms
+  profiles:
+    active: dev

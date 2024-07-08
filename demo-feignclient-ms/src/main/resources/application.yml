@@ -1,0 +1,26 @@
+#spring:
+#  config:
+#    import: configserver:
+
+
+#spring.application.name=demo-feignclient-ms
+
+
+
+
+#spring:
+#  application:
+#    name: demo-feignclient-ms
+
+#  cloud:
+#    openfeign:
+#      client:
+#        config:
+#    config:
+#      uri: ${ENDERECO}
+
+
+
+#
+
+
