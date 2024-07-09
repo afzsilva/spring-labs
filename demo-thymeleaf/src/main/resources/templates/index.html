@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:th="http://www.thymeleaf.org"
+lang="pt-BR" >
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"  th:href="@{/css/bootstrap.min.css}">
+<link rel="stylesheet"  th:href="@{/css/main.css}">
+<title th:text="#{index.page.title}">thymeleaf</title>
+</head>
+<body>
+
+ 	<!-- th:insert 
+	<div th:insert="~{fragments/_header :: mheader}"></div>
+ 	-->
+	
+	<!-- th:include 
+	<div th:include="~{fragments/_header :: mheader}"></div>
+	-->
+	
+	<!-- th:replace -->
+	<div th:replace="~{fragments/_header :: mheader}"></div>
+	
+	<h3>Pagina Index</h3>
+	
+	<a th:href="@{/home}">HOME</a>
+	
+	<script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>

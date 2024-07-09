@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:th="http://www.thymeleaf.org"
+lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Exibir Mensagem</title>
+
+<link rel="stylesheet"  th:href="@{/css/bootstrap.min.css}">
+<link rel="stylesheet"  th:href="@{/css/main.css}">
+</head>
+<body>
+
+<div th:insert="~{fragments/_header :: mheader}"></div>
+
+<h3>Voce esta na pagina home</h3>
+<a th:href="@{/}">INDEX</a>
+<p th:text="${msg}"></p>
+
+<hr>
+
+<ul>
+	<li th:each="item:${lista}">
+		<span th:text="${item}"></span>
+	</li>
+</ul>
+
+
+</body>
+</html>
