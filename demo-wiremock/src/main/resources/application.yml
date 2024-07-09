@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: demo-wm
+
+meumock:
+  client:
+    address:
+      url: http://localhost:8088
